@@ -1,0 +1,102 @@
+.route_list {
+  background-color: cl(white);
+  height: 900px;
+  .route_list_title {
+    background-color: cl(lightbrown);
+    padding: 90px 0;
+    text-align: center;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    span {
+      font-size: 50px;
+      border-bottom: 2px solid cl(primary);
+      padding-bottom: 4px;
+    }
+  }
+  .route_list_area {
+    height: 400px;
+    .route_list_area_background {
+      min-height: 50%;
+      background: linear-gradient(180deg, cl(lightbrown) 0%, cl(lightbrown) 50%, cl(white) 50%, cl(white) 100%);
+      .route_list_container {
+        margin: 0 auto;
+        width: 75%;
+        min-height: 400px;
+        background-color: cl(white);
+        box-shadow: 0 0 8px gray;
+        .route_list_container_grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: 0 40px 0 50px;
+          .route_list_container_item {
+            width: 200px;
+            height: 160px;
+            background-color: cl(white);
+            box-shadow: 0 0 4px black;
+            margin-top: 30px;
+            margin-right: 10px;
+            position: relative;
+            cursor: pointer;
+            &:nth-child(n+1){
+              margin-right: 10px;
+            }
+            #disabled_checkbox {
+              display: none;
+            }
+            .button_close {
+              position: absolute;
+              top: -6px;
+              right: -6px;
+              transform: scale(2);
+              display: none;
+              width: 16px;
+              height: 16px;
+              background-color: cl(white);
+              border-radius: 50%;
+              border: 1px solid cl(white);
+            }
+            &::before {
+              content:"";
+              display: block;
+              width:21%;
+              order:1;
+            }
+            &::after {
+              content:"";
+              display: block;
+              width:21%;
+            }
+            .route_list_container_item_text {
+              padding: 10px;
+              text-align: left;
+              color: cl(black);
+            }
+            .image_box.checked {
+              // チェックが入った状態だと、枠が表示されるようにする
+              border: 5px solid #2e80ff;
+              // 線をwidthとheightに含めるようにする
+              box-sizing: border-box;
+            }
+            .image_box.checked > .button_close {
+                // 画像にcheckedクラスが指定されたときは
+                // チェックボックスの非表示を解除
+                display: block;
+            }
+          }
+          input{margin:80px 0 0 80px;}
+          div{
+              display:none;
+              margin:25px;
+              padding:25px;
+              background:#eee;
+              width:200px;
+              height:150px;
+          }
+        }
+      }
+    }
+  }
+}

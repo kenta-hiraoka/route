@@ -1,0 +1,175 @@
+.recommend {
+  padding-top: 100px;
+  align-items: center;
+  font-size:0;
+  background-color: cl(lightbrown);
+    .recommend-container {
+      width: 100%;
+      background-color: cl(white);
+      margin: 50px auto 50px auto;
+      .recommend-genre-main {
+        margin: 0 auto;
+        background: linear-gradient(180deg, cl(lightbrown) 0%, cl(lightbrown) 50%, cl(white) 50%, cl(white) 100%);
+        z-index: 1;
+        height: 300px;
+        width: 100%;
+        .recommend-genre-main-image {
+          position: relative;
+          z-index: 1;
+          background-color: rgb(37, 60, 37);
+          display: block;
+          margin: auto;
+          height: 100%;
+          width: 75%;
+          overflow: hidden;
+          }
+          .recommend-img {
+            position: relative;
+            opacity: 0.6;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 3;
+            transition-duration: 0.3s;
+            &:hover {
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+            opacity: 1;
+            }
+          }
+          .osusume {
+            color: white;
+            position: absolute;
+            top: 13%;
+            left: 26%;
+            transform: translate(-50%,-50%);
+            z-index: 5;
+            font-size: 30px;
+          }
+          .model-course {
+            color: white;
+            position: absolute;
+            top: 28%;
+            left: 26%;
+            transform: translate(-50%,-50%);
+            z-index: 5;
+            font-size: 45px;
+          }
+          .model-title {
+            position: absolute;
+            color: white;
+            z-index: 5;
+            top: 40%;
+            left: 26%;
+            transform: translate(-50%,-50%);
+            width: 250px;
+            height: 20px;
+          }
+          .model-course-description {
+            color: white;
+            position: absolute;
+            top: 58%;
+            left: 26%;
+            transform: translate(-50%,-50%);
+            z-index: 5;
+            font-size: 20px;
+          }
+          .recommend-genre-show-more {
+            position: absolute;
+            top: 150%;
+            left: 16%;
+            background-color: rgb(255, 255, 255);
+            font-size: 17px;
+            text-align: center;
+            padding: 7px 55px;
+            z-index: 5;
+          }
+        }
+        .recommend-genre-container {
+          min-height: 600px;
+          margin: 30px auto;
+          width: 75%;
+        .recommend-genre-container-container-wrap {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-top: 50px;
+        width: 100%;
+        .genre {
+        width: 50%;
+        margin-bottom: 40px;
+        flex-basis:calc((100% - 40px) / 2);
+        overflow: hidden;
+        &:nth-child(1) {
+          background-color: rgb(37, 60, 37);
+          position: relative;
+          .container-text {
+            color: rgb(65, 123, 65);
+          }
+        }
+        &:nth-child(2) {
+          background-color: rgb(35, 59, 117);
+          position: relative;
+          .container-text {
+            color: rgb(35, 59, 117);
+          }
+        }
+        &:nth-child(3) {
+          background-color: rgb(141, 120, 44);
+          position: relative;
+          .container-text {
+            color: rgb(141, 120, 44);
+          }
+        }
+        &:nth-child(4) {
+          background-color: rgba(186, 51, 51, 0.581);
+          position: relative;
+          .container-text {
+            color: rgba(186, 51, 51, 0.581);
+          }
+        }
+        .genre-img {
+          opacity: 0.6;
+          height: 300px;
+          transition-duration: 0.3s;
+          &:hover {
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+            opacity: 1;
+          }
+        }
+        .container-title {
+          color: white;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          font-size: 35px;
+          }
+          .container-title-wave {
+            position: absolute;
+            color: white;
+            top: 50%;
+            left: 50%;
+            width: 48%;
+            transform: translate(-50%,-50%);
+          }
+          .container-title-stress {
+            font-size: 50px;
+          }
+          .container-text {
+            position: absolute;
+            top: 60%;
+            left: 28%;
+            background-color: rgb(255, 255, 255);
+            font-size: 17px;
+            text-align: center;
+            padding: 7px 55px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.route_order {
+  .route_order_area {
+    height: 500px;
+    width: 75%;
+    margin: 0 auto;
+    .route_order_title {
+      font-size: 60px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      &:before,
+      &:after {
+        content: "";
+        height: 5px;
+        flex-grow: 1;
+        background-color: cl(primary);
+      }
+      &:before {
+        margin-right: 1rem;
+      }
+      &:after {
+        margin-left: 1rem;
+      }
+    }
+  }
+  .route_order_container {
+    height: 1000px;
+    width: 100%;
+    margin: 100px auto;
+    .route_order_container_flow {
+      display: block;
+      }
+      .route_order_container_item {
+        display: flex;
+        width: 100%;
+        height: 240px;
+        border: 2px solid cl(primary);
+        position: relative;
+        margin-top: 120px;
+        }
+        .disabled_checkbox {
+          display: none;
+        }
+        .remove_item {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          transform: scale(2);
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: cl(primary);
+          border: 2px solid cl(white);
+          cursor: pointer;
+        }
+        .route_order_container_item_number {
+          width: 130px;
+          height: 100%;
+          text-align: center;
+          font-size: 48px;
+          background-color: cl(primary);
+          color: yellow ;
+          display: table;
+          p {
+            vertical-align: middle;
+            display:table-cell;
+          }
+        }
+        .route_order_container_image_area {
+          margin: 30px;
+          width: 245px;
+          color: cl(black);
+          display: flex;
+          .route_order_container_item_area_image {
+            width: 100%;
+            height:175px;
+            margin-right: 30px;
+          }
+        }
+        .route_order_container_text_area {
+          width: 50%;
+          margin: 30px;
+          color: cl(black);
+          .route_order_container_item_area_title {
+            width: 100%;
+            height: 50px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid;
+            font-size: 24px;
+          }
+          .route_order_container_item_area_description {
+            width: 100%;
+            padding-top: 20px;
+          }
+        }
+      }
+      .route_order_item_next {
+        width: 120px;
+        margin: 30px auto;
+        &_img {
+          & :last-of-type {
+            display: none;
+          }
+        }
+        }
+      }
+    .route_order_submit {
+      margin: 100px auto;
+      height: 100px;
+      .route_order_submit_button {
+        width: 100%;
+        display       : inline-block;
+        font-size     : 27pt;        /* 文字サイズ */
+        text-align    : center;      /* 文字位置   */
+        cursor        : pointer;     /* カーソル   */
+        padding       : 12px 100px;   /* 余白       */
+        background    : #447a0a;     /* 背景色     */
+        color         : #ffce63;     /* 文字色     */
+        line-height   : 1em;         /* 1行の高さ  */
+        transition    : .3s;         /* なめらか変化 */
+        box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+        border        : 2px solid #447a0a;    /* 枠の指定 */
+      }
+      .route_order_submit_button:hover {
+        box-shadow    : none;        /* カーソル時の影消去 */
+        color         : #447a0a;     /* 背景色     */
+        background    : #ffce63;     /* 文字色     */
+      }
+    }

@@ -1,0 +1,33 @@
+.sns {
+  width: 100%;
+  .sns-title {
+    background-color: cl(lightbrown);
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+    .sns-logo {
+    width: 200px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    }
+    .sns-container {
+      margin:0 auto;
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      }
+      .sns-item {
+        margin-top: 30px;
+        .sns-item-img {
+          width: 160px;
+          height: 160px;
+        }
+        &:nth-child(n+1) {
+        margin-left: 29px;
+      }
+      &:nth-child(n+5) {
+        margin-top: 30px;
+      }
+    }
+  }
+}

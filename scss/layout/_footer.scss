@@ -1,0 +1,35 @@
+.footer {
+  background-color: cl(primary);
+  .footer-nav {
+    padding: 100px 160px 80px 160px;
+    .footer-nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      }
+      .footer-nav-item {
+        &:nth-child(n+1) {
+          margin-left: 35px;
+        }
+        a {
+          font-size: 16px;
+          color: cl(white);
+        }
+        a:hover {
+          color: #ffc363;
+      }
+    }
+  }
+  .footer-logo {
+    width: 88px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .copyright {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: cl(white);
+  }
+}

@@ -1,0 +1,51 @@
+@mixin font-kokoro {
+  font-family: "kokoro";
+  }
+
+	#slider-main {
+    background: linear-gradient(180deg, cl(white) 0%, cl(white) 50%, cl(lightbrown) 50%, cl(lightbrown) 100%);
+		background-color: cl(lightbrown);
+		margin: 50px 0 0 0;
+		padding: 0;
+		line-height: 0;
+	}
+.main-img img{
+	width: 75%;
+	margin: auto;
+	height: 450px;
+  object-fit: cover;
+	display: block;
+}
+.slick-next {
+	right: 180px!important;
+}
+.slick-prev {
+	left: 170px!important;
+}
+.slick-dots {
+	background-color: cl(lightbrown);
+}
+  .slider-title1 {
+  font-size: 30px;
+	background-color: #fff;
+	color:rgb(0, 0, 0);
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+	position: absolute;
+	top: 30%;
+	left: 12%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+}
+.slider-title2 {
+  font-size: 30px;
+	background-color: #fff;
+	color:rgb(0, 0, 0);
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+	position: absolute;
+	top: 38%;
+	left: 12%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+}

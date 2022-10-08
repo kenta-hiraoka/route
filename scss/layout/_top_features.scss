@@ -1,0 +1,89 @@
+.search {
+  padding-top: 10px;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  background-color: cl(lightbrown);
+  font-size:0;
+  .search-text-wrap {
+    display: flex;
+    justify-content: center;
+    background-color: cl(lightbrown);
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: cl(primary);
+    .keyword-text {
+      color: cl(primary);
+      padding-right: 100px;
+    }
+    .category-text {
+      color: cl(primary);
+      padding-left: 15px;
+    }
+  }
+  .search-area-wrap {
+    display: flex;
+    justify-content: center;
+    background-color: cl(lightbrown);
+    // padding-bottom: 80px;
+  }
+    .search-text {
+      padding-bottom: 30px;
+      display: block;
+  }
+  .keyword {
+    padding-right: 15px;
+    position: relative;
+    overflow: hidden;
+    width: 20%;
+    height: 30px;
+    box-sizing    : border-box;
+    vertical-align: top;
+    background    : #ffffff;             /* 入力域の背景色 */
+    border        : 2px solid #59b300;   /* 入力域の枠線   */
+    border-radius : 4px;                 /* 入力域の角丸   */
+    font-size     : 15px;                /* 入力文字サイズ */
+    color         : #333333;             /* 入力文字の色   */
+    font-weight   : bold;                /* 入力文字の太字 */
+    letter-spacing: .1em;                /* 入力文字の間隔 */
+  }
+  .keyword input[type="text"]:focus{
+    border-color  : #59b300;                 /* 枠線色     */
+    background    : rgba(89, 179, 0, 0.20);  /* 背景色     */
+    box-shadow    : 4px 4px 2px #999;        /* 影付け     */
+    outline       : none;
+  }
+  .keyword input[type="text"]{
+    width: 100%;
+    border: none;
+    height: 1.7em;
+    padding: 2px 12px;
+  }
+  .keyword input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    border: none;
+    background: cl(primary);
+    color: #fff;
+    position: absolute;
+    width: 3.5em;
+    height: 3.0em;
+    right:0px;
+    top: -8px;
+    outline : none;
+  }
+  .category {
+    font: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    margin-left: 30px;
+    width: 15%;
+    height: 30px;
+    box-sizing: border-box;
+    vertical-align: top;
+    background    : #ffffff;             /* 入力域の背景色 */
+    border        : 2px solid #59b300;   /* 入力域の枠線   */
+    border-radius : 4px;                 /* 入力域の角丸   */
+    padding       : 0 12px;              /* 入力文字の余白 */
+    color         : #333333;             /* 入力文字の色   */
+    letter-spacing: .1em;                /* 入力文字の間隔 */
+  }
+}
